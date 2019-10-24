@@ -1,6 +1,8 @@
 >本文将从零开始搭建一个现代化的PHP框架，该框架会拥有现代框架的一切特征，
 如单入口，路由，依赖注入，composer类自动加载机制等等，如同时下最流行的Laravel框架一样。
 
+项目地址 ： https://github.com/wuxiumu/php-framework
+
 ## 一、开发环境搭建
 ### 1、开发环境搭建
 - window10
@@ -371,7 +373,7 @@ return array(
 );
 ```
 
-这里的核心思想是使用了一个 `spl_autoload_register()` 函数，进行类按需加载，懒加载，即创建对象，然后再加载对象所需要的类文件，而不是之前那种将所有的类文件全部引入，具体请看 详解spl_autoload_register()函数 https://segmentfault.com/a/1190000009742195。
+这里的核心思想是使用了一个 `spl_autoload_register()` 函数，进行类按需加载，懒加载，即创建对象，然后再加载对象所需要的类文件，而不是之前那种将所有的类文件全部引入，具体请看 详解spl_autoload_register()函数 https://segmentfault.com/a/1190000009742195
 
 如果新添加了类文件，我们需要运行下面命令进行类自动重新加载：
 ```
@@ -578,9 +580,9 @@ class TasksController
 }
 ```
 
-从 PHP5.3 开始就支持命名空间了，关于命名空间的介绍看官方文档： http://php.net/manual/zh/lang... 。
+从 PHP5.3 开始就支持命名空间了，关于命名空间的介绍看官方文档：
+
+https://www.php.net/manual/zh/language.namespaces.php
+
 
 其实也很简单，你把命名空间想象层文件夹就行
- 
- 
- 
